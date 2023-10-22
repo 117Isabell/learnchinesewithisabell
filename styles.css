@@ -1,0 +1,193 @@
+/*for the navigation bar links hover effect */
+.navbar-nav .nav-link:hover {
+  color: red;
+}
+
+/*  for the dropdown menu links hover effect */
+.dropdown-menu .dropdown-item:hover {
+  background-color: lightgray;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+body {
+  /* background-image: url("./img/background-pic.jpeg"); */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+#search-input {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 10px;
+  border: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #138065;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.courses {
+  text-transform: uppercase;
+  background-color: white;
+  padding: 10px;
+  border: 2px solid white;
+  color: black;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.courses-container {
+  display: flex; /*  the images will be one row */
+  justify-content: space-between;
+  /* there will be space bwteen the images */
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container-class {
+  margin-bottom: 60px;
+  border-radius: 5px;
+  box-shadow: 5px;
+  overflow: hidden;
+  /* if the content inside the element exceeds its height, it will be clipped and not visible to the user */
+}
+.flex-container-class img {
+  object-fit: cover;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.flex-container-class:hover img {
+  opacity: 0.8;
+  /* opacity adjust the transparency level of an element and its content.*/
+}
+
+.class-type {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid white;
+  color: black;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  text-transform: uppercase;
+  background-color: white;
+  padding: 10px;
+  border: 2px solid white;
+  color: black;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.testimonials-containers {
+  display: flex; /* the images will be one row */
+  justify-content: space-between;
+  /* there will be space bwteen the images */
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container-testimonials {
+  margin-bottom: 60px;
+  border-radius: 5px;
+  box-shadow: 5px;
+  overflow: hidden;
+  /* if the content inside the element exceeds its height, it will be clipped and not visible to the user */
+}
+.flex-container-testimonials img {
+  object-fit: cover;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.flex-container-testimonials:hover img {
+  opacity: 0.8;
+  /* opacity adjust the transparency level of an element and its content.*/
+}
+
+.learn {
+  text-align: center;
+}
+.contact {
+  text-align: center;
+}
+
+#footer {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #666666;
+  font-size: 14px;
+}
+
+#footer .left {
+  text-align: left;
+}
+
+#footer .right {
+  text-align: right;
+}
+
+/* 
+desktop 1200px
+laptop 992px
+tablet 768px
+moblie 576px */
+
+/* PHONE VERSION */
+@media only screen and (min-width: 320px) {
+  .courses {
+    color: blue;
+  }
+}
+/* TABLET VERSION */
+@media only screen and (min-width: 768px) {
+  .courses {
+    color: lightgreen;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .courses {
+    color: black;
+  }
+}
