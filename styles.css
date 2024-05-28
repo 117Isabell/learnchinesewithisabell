@@ -118,24 +118,25 @@ form {
 }
 
 .testimonials-containers {
-  display: flex; /* the images will be one row */
-  justify-content: space-between;
-  /* there will be space bwteen the images */
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-around; /* Adjust as needed to space out the testimonials */
+  align-items: center; /* Centers the testimonials vertically; adjust as needed */
+  flex-wrap: wrap; /* Allows testimonials to wrap to the next line on smaller screens */
 }
 
 .flex-container-testimonials {
-  margin-bottom: 60px;
-  border-radius: 5px;
-  box-shadow: 5px;
-  overflow: hidden;
-  /* if the content inside the element exceeds its height, it will be clipped and not visible to the user */
+  flex: 1; /* Each testimonial flex item grows to fill the available space */
+  margin: 10px; /* Adds some space around each testimonial; adjust to your liking */
+  text-align: center; /* Centers the text inside each testimonial box */
 }
-.flex-container-testimonials img {
-  object-fit: cover;
-  transition: opacity 0.2s ease-in-out;
+
+.flex-container-testimonials p {
+  padding: 20px; /* Adds some padding inside the text container for better readability */
+}
+
+.aligned-text {
+  text-align: justify; /* Aligns text on both sides */
+  text-justify: inter-word; /* Adjusts spacing between words */
 }
 
 .flex-container-testimonials:hover img {

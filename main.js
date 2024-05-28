@@ -68,3 +68,7 @@ if (window.location.pathname.includes("contact.html")) {
     }
   });
 }
+
+let countSum = 20;
+countSum = 21;
+console.log(countSum);
